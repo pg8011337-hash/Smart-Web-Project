@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products</title>
+</head>
+<body>
+
+<h2>Product List</h2>
+
+<select id="filter" onchange="displayProducts()">
+  <option value="all">All</option>
+  <option value="mobile">Mobile</option>
+  <option value="laptop">Laptop</option>
+</select>
+
+<select id="sort" onchange="displayProducts()">
+  <option value="default">Sort By</option>
+  <option value="low">Price Low → High</option>
+  <option value="high">Price High → Low</option>
+</select>
+
+<div id="productList"></div>
+
+<script src="products.js"></script>
+</body>
+</html>
